@@ -80,8 +80,14 @@ public class MoreAndMoreTests {
 	    assertFalse(isCube(143));
 
 	  }
-	public boolean isCube() {
-		
+	public boolean isCube(int d) {
+		for(int i = 1; i <= Math.cbrt(d); i++) {
+			int n = i * i * i;
+			if(n == d) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 
