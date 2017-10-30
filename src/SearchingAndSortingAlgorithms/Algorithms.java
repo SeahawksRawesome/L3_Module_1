@@ -24,6 +24,39 @@ public class Algorithms {
 		}
 		return d;
 	}
+	public static double findTallest(List<Double> peeps) {
+		double d = 0;
+		for(int i = 0; i < peeps.size(); i++) {
+			double b = peeps.get(i);
+			if(b > d) {
+				d = b;
+			}
+			else {
+				
+			}
+		}
+		
+		return d;
+	}
+	public static String findLongestWord(List<String> words) {
+		String a = "";
+		String d = "";
+		for(int i = 0; i < words.size(); i++) {
+			 d = words.get(i);
+			if(d.length() > a.length()) {
+				a = d;
+			}
+			else {
+				
+			}
+		}
+		return a;
+	}
+	public static String containsSOS(List<String> message1, List<String> message2 ) {
+	
+		
+		return "ff";
+	}
 	
 	//Add other methods here
 }
