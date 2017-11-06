@@ -52,11 +52,54 @@ public class Algorithms {
 		}
 		return a;
 	}
-	public static String containsSOS(List<String> message1, List<String> message2 ) {
-	
+	public static boolean containsSOS(List<String> messageME ) {
+		String jeffy = "... --- ...";
+		String m = "";
+		for(int i = 0; i < messageME.size(); i++ ) {
+			m = messageME.get(i).trim();
+			if(jeffy.equals(m)) {
+				return true;
+			}
+			else {
+			}
+		}
 		
-		return "ff";
+		return false;
 	}
 	
+	public static List <Double> sortScores(List <Double> RUOYA) {
+		for(int i = 0; i < RUOYA.size(); i++) {
+			for(int j = i+1; j < RUOYA.size(); j++) {
+				if(RUOYA.get(i) > RUOYA.get(j)) {
+					Double temp = RUOYA.get(i);
+					RUOYA.set(i, RUOYA.get(j));
+					RUOYA.set(j, temp );
+					
+				}
+				else {
+				}
+			}
+			
+		}
+		return RUOYA;
+	}
+	public static List <String> sortDNA (List <String> ben){
+		for(int i = 0; i < ben.size(); i++) {
+			for(int j = i+1; j < ben.size(); j++) {
+				if(ben.get(i) > ben.get(j)) {
+					String temp = ben.get(i);
+					ben.set(i, ben.get(j));
+					ben.set(j, temp );
+					
+				}
+				else {
+				}
+			}
+			
+		}
+		return ben;
+		
+	
+	}
 	//Add other methods here
 }
