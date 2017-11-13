@@ -86,11 +86,10 @@ public class Algorithms {
 	public static List <String> sortDNA (List <String> ben){
 		for(int i = 0; i < ben.size(); i++) {
 			for(int j = i+1; j < ben.size(); j++) {
-				if(ben.get(i) > ben.get(j)) {
+				if(ben.get(i).length() > ben.get(j).length()) {
 					String temp = ben.get(i);
 					ben.set(i, ben.get(j));
 					ben.set(j, temp );
-					
 				}
 				else {
 				}
@@ -100,6 +99,22 @@ public class Algorithms {
 		return ben;
 		
 	
+	}
+	public static List <String> sortWords (List <String> strung) {
+		for(int i = 0; i < strung.size(); i++ ) {
+			for(int j = i+1; j < strung.size(); j++) {
+				if(strung.get(i).compareTo(strung.get(j)) > 0) {
+					String temp = strung.get(i);
+					strung.set(i, strung.get(j));
+					strung.set(j, temp);
+				}
+				else {
+					
+				}
+			}
+			
+		}
+		return strung;
 	}
 	//Add other methods here
 }
